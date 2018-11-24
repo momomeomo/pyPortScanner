@@ -23,9 +23,9 @@ def portscan(port):
             print(port,'OPEN')
         con.close()
     except:
-	with print_lock:
-		print(port, 'CLOSED')
-		return
+	    with print_lock:
+		    print(port, 'CLOSED')
+		    return
 
 
 def threader():
