@@ -1,11 +1,11 @@
-# py2.7
+    # py2
 import socket
 import threading
 from Queue import Queue
 
 
 memes = int(input("Amount of threads to use: "))
-target = raw_input("Target: ")
+target = raw_input("IP address: ")
 minRange = int(input("min port to scan: "))
 maxRange = int(input("max port to scan: "))
 maxRange += 1
@@ -51,16 +51,4 @@ q.join()
 # s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # server = ''
 
-# def pscan(port):
-#     try:
-#         s.connect((server,port))
-#         return True
-#     except:
-#         return False
-
-
-# for x in range(1,)
-#     if pscan(x):
-#         print(x,'Open')
-#     else:
-#         print(x,'Closed')
+#target = IP

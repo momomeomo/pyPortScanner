@@ -1,6 +1,4 @@
-
-#python 2.7 conversion to python3
-
+	# py3
 import socket
 import threading
 import queue
@@ -16,8 +14,7 @@ print_lock = threading.Lock()
 q = queue.Queue()
 
 def portscan(port):
-	s = socket.socket(socket.AF_INET ,
-				socket.SOCK_STREAM)
+	s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
 	try:
 		con = s.connect((target,port))
 		with print_lock:
@@ -44,10 +41,8 @@ for worker in range(minRange,maxRange):
 
 q.join()
 
-quit()
 
 #queue.put in python3 queue.Queue()
-
 #target = IP
-#doesnt work on linux?
-#only responds as closed
+
+#doesnt work on ubuntu? only responds as closed
